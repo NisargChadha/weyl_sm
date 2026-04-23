@@ -1,11 +1,12 @@
 %% Thermoelectric Gurzhi Effect in Weyl Semimetals
 %% Full paper with figures embedded
-%% Compile: pdflatex draft.tex (twice for refs)
-%% Place all fig*.png in the same folder as this file.
+%% Compile: pdflatex draft.tex && bibtex draft && pdflatex draft.tex && pdflatex draft.tex
 
 \documentclass[twocolumn,11pt]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath,amssymb,graphicx,xcolor,hyperref,caption}
+\usepackage{natbib}
+\bibliographystyle{unsrt}
 \captionsetup{font=small,labelfont=bf,labelsep=period}
 
 \title{\textbf{Thermoelectric Gurzhi Effect in Weyl Semimetals:\\
@@ -34,10 +35,10 @@ Width-dependent measurements cleanly separate the chiral anomaly from phonon-dra
 \section{Introduction}
 
 Weyl semimetals exhibit anomaly-driven transport: negative magnetoresistance, anomalous 
-Hall effect, and anomalous thermoelectric signals. In clean samples where $\tau_{ee}<\tau_{\mathrm{mr}}$, 
-hydrodynamic collective flow dominates. Three times coexist: $\tau_{ee}$ (inelastic), 
+Hall effect, and anomalous thermoelectric signals \citep{Gooth2017,Gooth2018}. In clean samples where $\tau_{ee}<\tau_{\mathrm{mr}}$, 
+hydrodynamic collective flow dominates \citep{Levitov2016,Bandurin2016,Crossno2016}. Three times coexist: $\tau_{ee}$ (inelastic), 
 $\tau_{\mathrm{mr}}$ (momentum-relaxing), and $\tau_5$ (intervalley). Recent experiments 
-on WP$_2$ and NbP show width-dependent resistivity and putative anomaly signatures, 
+on WP$_2$ and NbP \citep{Gooth2018} show width-dependent resistivity and putative anomaly signatures, 
 but whether these come from the chiral anomaly, phonon-drag, or purely hydrodynamic 
 effects remains unclear. We show that width-dependent Seebeck and Lorenz measurements 
 can \emph{separate} these contributions via two independent geometric length scales.
@@ -70,12 +71,12 @@ Transport coefficients then split into two $g$-factor channels:
 \sigma_{xx}(W) &= \sigma_{\mathrm{hydro}}^\infty \, g(W/2\ell_G) + \sigma_{\mathrm{anom}}^\infty(B) \, g(W/2\ell_5) + \sigma_Q, \\
 \alpha_{xx}(W) &= \alpha_{\mathrm{hydro}}^\infty \, g(W/2\ell_G) + \alpha_{\mathrm{anom}}^\infty(B) \, g(W/2\ell_5),
 \end{align}
-with bulk values from Lucas--Davison--Sachdev and Messica--Ostrovsky--Gutman.
+with bulk values from \citep{Lucas2016} and \citep{Messica2023}.
 
 \section{Benchmarks}
 
-All 9 benchmarks pass (Fig.~\ref{fig:9}): (a) classical Gurzhi $\sigma_{\mathrm{hydro}}(W) = g(W/2\ell_G)$, 
-(b) anomalous Gurzhi $\sigma_{\mathrm{anom}}(W) = g(W/2\ell_5)$, (c) negative MR $\sigma \propto B^2$.
+All 9 benchmarks pass (Fig.~\ref{fig:9}): (a) classical Gurzhi \citep{Gurzhi1963} $\sigma_{\mathrm{hydro}}(W) = g(W/2\ell_G)$, 
+(b) anomalous Gurzhi \citep{Sukhachov2022} $\sigma_{\mathrm{anom}}(W) = g(W/2\ell_5)$, (c) negative MR \citep{Son2013} $\sigma \propto B^2$.
 
 \section{Results}
 
@@ -90,7 +91,7 @@ transport is bulk-like but anomaly is strongly suppressed.
 The Seebeck coefficient is suppressed at narrow $W$. More strikingly, the Lorenz 
 ratio $L(W,T)$ peaks at intermediate widths, reaching $L/L_0 \sim 3$--$10$ near charge 
 neutrality. This peak violates Wiedemann--Franz law and arises from incomplete Onsager 
-cancellation at finite $\sigma_Q$ or $B$.
+cancellation \citep{Messica2023} at finite $\sigma_Q$ or $B$.
 
 \subsection{Lorenz ridge in $(W,T)$ plane (Fig.~\ref{fig:4})}
 
@@ -207,15 +208,7 @@ We predict a thermoelectric Gurzhi effect in hydrodynamic Weyl semimetals, with 
 distinctive Lorenz ridge and width-dependent anomaly signature that separates chiral 
 effects from phonon-drag. Predictions are falsifiable on WP$_2$, NbP, Cd$_3$As$_2$, WTe$_2$.
 
-\begin{thebibliography}{99}
-\bibitem{Lucas2016} A. Lucas, R. A. Davison, S. Sachdev, PNAS \textbf{113}, 9463 (2016).
-\bibitem{Gooth2017} J. Gooth \textit{et al.}, Nature \textbf{547}, 324 (2017).
-\bibitem{Gooth2018} J. Gooth \textit{et al.}, Nat. Commun. \textbf{9}, 4093 (2018).
-\bibitem{Messica2023} Y. Messica, P. Ostrovsky, D. Gutman, PRB \textbf{107}, 235102 (2023).
-\bibitem{Sukhachov2022} P. Sukhachov, B. Trauzettel, PRB \textbf{105}, 085141 (2022).
-\bibitem{Levitov2016} L. Levitov, G. Falkovich, Nat. Phys. \textbf{12}, 672 (2016).
-\bibitem{Bandurin2016} D. Bandurin \textit{et al.}, Science \textbf{351}, 1055 (2016).
-\bibitem{Crossno2016} J. Crossno \textit{et al.}, Science \textbf{351}, 1058 (2016).
-\end{thebibliography}
+\bibliographystyle{unsrt}
+\bibliography{references}
 
 \end{document}
