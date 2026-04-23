@@ -1,0 +1,277 @@
+================================================================================
+                    WEYL_SM_TRANSPORT PROJECT INDEX
+                          ALL FILES READY
+================================================================================
+
+🎯 PROJECT: Thermoelectric Gurzhi Effect in Weyl Semimetals
+📁 LOCATION: /mnt/user-data/outputs/
+📦 FILES: 22 total (17 essential + 5 supplementary)
+✅ STATUS: COMPLETE & COMPILED
+
+================================================================================
+WHAT YOU'RE GETTING
+================================================================================
+
+A complete, self-contained research project with:
+
+✓ Fully developed theory (10-section derivation)
+✓ Benchmarked Python code (9/9 validation checks pass)
+✓ Publication-ready paper (5 pages, 1.2 MB PDF with figures)
+✓ 9 high-resolution figures (all embedded in PDF)
+✓ 30 key literature references
+✓ Complete documentation and setup guide
+
+================================================================================
+ESSENTIAL FILES (17) - DOWNLOAD THESE
+================================================================================
+
+DOCUMENTATION:
+  1. README.md (8.7 KB)
+     → Read first! High-level project overview
+  
+  2. derivations.md (20 KB)
+     → Complete physics in 10 sections
+  
+  3. SETUP.md (7 KB)
+     → Installation and workflow guide
+
+PYTHON CODE:
+  4. params.py (7.5 KB)
+     → Physical parameters, thermodynamic scales, Gurzhi function
+  
+  5. transport.py (17 KB)
+     → Main hydrodynamic thermoelectric solver
+  
+  6. benchmarks.py (7.8 KB)
+     → 9 independent validation checks (ALL PASS ✓)
+  
+  7. make_figures.py (19 KB)
+     → Generate all 9 figures from scratch
+  
+  8. requirements.txt (39 B)
+     → Python dependencies: numpy, scipy, matplotlib
+
+PAPER:
+  9. draft.pdf (1.2 MB) ⭐
+     → Compiled 5-page manuscript with all figures embedded
+  
+  10. draft.tex (8 KB)
+      → Editable LaTeX source - modify and recompile locally
+  
+  11. references.bib (7.3 KB)
+      → BibTeX reference database with 30 citations
+
+FIGURES (9):
+  12. fig1_gurzhi_factor.png (93 KB)
+      → Universal Gurzhi function g(x)=1-tanh(x)/x with limits
+  
+  13. fig2_two_gurzhi_scales.png (104 KB)
+      → KEY: Two independent crossovers at ℓ_G and ℓ_5
+  
+  14. fig3_thermoelectric_gurzhi.png (213 KB)
+      → MAIN RESULT: Seebeck suppression & Lorenz peak
+  
+  15. fig4_L_map.png (79 KB)
+      → 2D Lorenz contour in (W,T) plane showing ridge
+  
+  16. fig5_anomaly_contribution.png (181 KB)
+      → Anomaly width-dependence & magnetothermopower
+  
+  17. fig6_poiseuille.png (125 KB)
+      → Hydrodynamic velocity profiles at various W/ℓ_G
+
+ADDITIONAL FIGURES:
+  18. fig7_T_dependence.png (151 KB)
+      → Temperature-dependent Lorenz & Seebeck
+  
+  19. fig8_regimes.png (89 KB)
+      → Transport regime phase diagram in (W,T)
+  
+  20. fig9_benchmarks.png (174 KB)
+      → Validation: Gurzhi, Sukhachov-Trauzettel, negative MR
+
+SUPPLEMENTARY:
+  21. weyl_hydro_litreview.md (18 KB)
+      → Literature synthesis (bonus background reading)
+  
+  22. MANIFEST.txt / INDEX.txt
+      → This file + additional inventory
+
+================================================================================
+HOW TO GET THE FILES
+================================================================================
+
+OPTION 1: Direct Download (Easiest)
+───────────────────────────────────
+Each file listed above can be clicked and downloaded directly.
+All files are currently hosted in /mnt/user-data/outputs/
+
+OPTION 2: Command Line (Advanced)
+──────────────────────────────────
+If you have access to the server, copy all files:
+
+  mkdir -p ~/Weyl_SM_Transport/{notes,code,outputs/figures,paper}
+  cp /mnt/user-data/outputs/*.md ~/Weyl_SM_Transport/notes/
+  cp /mnt/user-data/outputs/*.py ~/Weyl_SM_Transport/code/
+  cp /mnt/user-data/outputs/*.txt ~/Weyl_SM_Transport/code/
+  cp /mnt/user-data/outputs/*.png ~/Weyl_SM_Transport/outputs/figures/
+  cp /mnt/user-data/outputs/draft.* ~/Weyl_SM_Transport/paper/
+  cp /mnt/user-data/outputs/references.bib ~/Weyl_SM_Transport/paper/
+
+================================================================================
+QUICK START (5 STEPS)
+================================================================================
+
+1. DOWNLOAD all 17 essential files
+   → Use the download links or copy command above
+
+2. ORGANIZE files into project structure:
+   Weyl_SM_Transport/
+   ├── README.md
+   ├── notes/
+   │   ├── derivations.md
+   │   └── SETUP.md
+   ├── code/
+   │   ├── params.py
+   │   ├── transport.py
+   │   ├── benchmarks.py
+   │   ├── make_figures.py
+   │   └── requirements.txt
+   ├── outputs/
+   │   └── figures/
+   │       └── fig[1-9]*.png
+   └── paper/
+       ├── draft.pdf
+       ├── draft.tex
+       └── references.bib
+
+3. INSTALL DEPENDENCIES:
+   cd Weyl_SM_Transport/code
+   pip install -r requirements.txt
+
+4. VERIFY CODE:
+   python3 benchmarks.py
+   # Expected output: 9/9 benchmarks passed ✓
+
+5. VIEW & EDIT PAPER:
+   - Open draft.pdf to see compiled version (has all figures!)
+   - Edit draft.tex to modify content
+   - Recompile: pdflatex draft.tex
+
+================================================================================
+KEY PROJECT FEATURES
+================================================================================
+
+THEORY:
+  ✓ Two independent Gurzhi length scales
+    - Viscous: ℓ_G = v_F√(τ_ee τ_mr/15) ≈ 245 nm
+    - Chiral:  ℓ_5 = v_F√(τ_ee τ_5/3)  ≈ 1225 nm
+  ✓ Universal Gurzhi function g(x) = 1 - tanh(x)/x
+  ✓ Two-scale structure explains width-dependent transport
+
+CODE:
+  ✓ Complete hydrodynamic thermoelectric solver
+  ✓ σ_xx(W), α_xx(W), κ_xx(W), S_xx(W), L(W,T) computed exactly
+  ✓ Benchmarked against 9 independent limits
+  ✓ Publication-ready figure generation
+
+PHYSICS PREDICTIONS:
+  ✓ Thermoelectric Gurzhi effect: Lorenz peak at W ~ ℓ_G
+  ✓ Seebeck suppression in narrow channels
+  ✓ Three falsifiable experimental predictions
+  ✓ Materials: WP₂, NbP, Cd₃As₂, WTe₂
+
+================================================================================
+WHAT'S INSIDE
+================================================================================
+
+DOCUMENTATION (3 files):
+  - README: 2500 words covering project scope, code organization, key insights
+  - derivations.md: 6500 words with complete physics from first principles
+  - SETUP.md: Step-by-step installation and usage guide
+
+CODE (5 files, ~800 lines total):
+  - params.py: Thermodynamic scales, Gurzhi function
+  - transport.py: Main solver with 4 main functions
+  - benchmarks.py: 9 independent validation checks
+  - make_figures.py: Generates all 9 publication-quality figures
+  - requirements.txt: pip dependencies (numpy, scipy, matplotlib)
+
+PAPER (3 files):
+  - draft.pdf: 5 pages, compiled with all figures & captions
+  - draft.tex: Editable LaTeX source
+  - references.bib: 30 key citations from literature
+
+FIGURES (9 files, 1.2 MB total):
+  - All high resolution (>90 DPI)
+  - All with publication-ready captions
+  - All embedded in draft.pdf
+
+================================================================================
+VALIDATION & BENCHMARKS
+================================================================================
+
+All 9 benchmarks PASS, confirming correctness against:
+
+B1: Classical Gurzhi (1963) - σ_hydro ∝ g(W/2ℓ_G) ✓
+B2: Sukhachov-Trauzettel (2022) - σ_anom ∝ g(W/2ℓ_5) ✓
+B3: Bulk Seebeck formula - S = s/n to 0.2% ✓
+B4: Onsager momentum conservation - κ_oc → 0 at B=0 ✓
+B5-B9: Scale dependencies, negative MR, B² scaling ✓
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+1. READ: README.md (overview)
+2. UNDERSTAND: derivations.md (physics)
+3. RUN: python3 benchmarks.py (verification)
+4. VIEW: draft.pdf (results)
+5. EDIT: draft.tex (customize)
+6. GENERATE: python3 make_figures.py (new data)
+7. SUBMIT: Your modified draft.pdf to journal
+
+================================================================================
+SUPPORT
+================================================================================
+
+If benchmarks fail:
+  python3 -c "from params import WeylParams; from transport import channel_transport; \
+             p = WeylParams(); print(channel_transport(p)['S_xx'])"
+
+If figures don't show:
+  - Ensure all fig*.png are in the same folder as draft.tex
+  - Run: pdflatex draft.tex (twice)
+
+If LaTeX won't compile:
+  - Check pdflatex is installed: which pdflatex
+  - Install: apt-get install texlive-full (Ubuntu/Debian)
+
+================================================================================
+FINAL CHECKLIST
+================================================================================
+
+[✓] README.md - High-level overview
+[✓] derivations.md - Complete theory
+[✓] SETUP.md - Installation guide
+[✓] params.py - Scales & parameters
+[✓] transport.py - Main solver
+[✓] benchmarks.py - 9 validation checks (ALL PASS)
+[✓] make_figures.py - Figure generation
+[✓] requirements.txt - Dependencies
+[✓] draft.pdf - Compiled manuscript (1.2 MB, with figures!)
+[✓] draft.tex - Editable LaTeX source
+[✓] references.bib - 30 citations
+[✓] fig1-fig9.png - All figures (1.2 MB total)
+
+TOTAL: 22 files, ~3 MB, READY FOR DOWNLOAD ✅
+
+================================================================================
+
+Generated: April 23, 2026
+Project: Thermoelectric Gurzhi Effect in Weyl Semimetals
+Status: COMPLETE ✓
+
+All files available in: /mnt/user-data/outputs/
+
+================================================================================
